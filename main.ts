@@ -333,9 +333,9 @@ game.showLongText("This is a single player game that I made for your Mr. Birchum
 scene.setBackgroundImage(assets.image`grid`)
 mymole = sprites.create(assets.image`mole`, SpriteKind.Enemy)
 myHammer = sprites.create(assets.image`hammer`, SpriteKind.Player)
-simplified.moveOnlyOnscreenWithArrows(myHammer, simplified.Speeds.Slow)
+simplified.moveOnlyOnscreenWithArrows(myHammer, simplified.Speeds.Med)
 carnival.startCountdownGame(30, carnival.WinTypes.Score)
 carnival.addLabelTo("Whack-the-Mole", carnival.Areas.Top)
-game.onUpdateInterval(1000, function () {
+game.onUpdateInterval(1500, function () {
     simplified.moveToRandomHoleOnGrid(mymole)
 })
