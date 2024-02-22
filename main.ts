@@ -329,7 +329,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 })
 let myHammer: Sprite = null
 let mymole: Sprite = null
-game.showLongText("This is a single player game that I made for your Mr. Birchum. I hope you enjoy!", DialogLayout.Center)
+game.showLongText("This is a single player game that I made for you Mr. Birchum. I hope you enjoy!", DialogLayout.Center)
 scene.setBackgroundImage(assets.image`grid`)
 mymole = sprites.create(assets.image`mole`, SpriteKind.Enemy)
 myHammer = sprites.create(assets.image`hammer`, SpriteKind.Player)
