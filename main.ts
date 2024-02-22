@@ -334,7 +334,7 @@ scene.setBackgroundImage(assets.image`grid`)
 mymole = sprites.create(assets.image`mole`, SpriteKind.Enemy)
 myHammer = sprites.create(assets.image`hammer`, SpriteKind.Player)
 simplified.moveOnlyOnscreenWithArrows(myHammer, simplified.Speeds.Slow)
-carnival.startCountdownGame(15, carnival.WinTypes.Multi)
+carnival.startCountdownGame(30, carnival.WinTypes.Score)
 carnival.addLabelTo("Whack-the-Mole", carnival.Areas.Top)
 game.onUpdateInterval(1000, function () {
     simplified.moveToRandomHoleOnGrid(mymole)
